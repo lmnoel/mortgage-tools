@@ -131,7 +131,7 @@ loan.summarize() - default_loan_summary
 >>            Cumulative interest paid: $553399.10 less
 >>            Cumulative P&I paid: $553399.10 less
 
-plot_relative_amortization_tables(default_amortization_table, loan.amortization_table(), "../../images/fig5.png")
+plot_relative_amortization_tables(default_amortization_table, loan.amortization_table())
 ```
 ![Current loan status with early payments applied](images/fig6.png)
 * Precise amortization info for loans with a current status applied cannot be determined, so are omitted from any plots.
