@@ -1,6 +1,6 @@
 import unittest
 
-from src.mortgage_tools.calculation import Loan
+from mortgage_tools.calculation import Loan
 
 
 class TestCalculation(unittest.TestCase):

@@ -2,9 +2,9 @@ import os
 import tempfile
 import unittest
 
-from src.mortgage_tools.calculation import Loan
-from src.mortgage_tools.optimization import payoff_curve
-from src.mortgage_tools.plot import plot_amortization_components, plot_monthly_payments, plot_monthly_payments_relative, \
+from mortgage_tools.calculation import Loan
+from mortgage_tools.optimization import payoff_curve
+from mortgage_tools.plot import plot_amortization_components, plot_monthly_payments, plot_monthly_payments_relative, \
     plot_relative_amortization_tables, plot_payoff_curve, plot_interest_rate_curve, plot_principal_curve
 
 

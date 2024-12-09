@@ -1,7 +1,7 @@
 import unittest
 
-from src.mortgage_tools.calculation import Loan
-from src.mortgage_tools.optimization import payoff_curve, interest_rate_curve, principal_curve, payoff_by_date
+from mortgage_tools.calculation import Loan
+from mortgage_tools.optimization import payoff_curve, interest_rate_curve, principal_curve, payoff_by_date
 
 
 class TestOptimization(unittest.TestCase):
