@@ -4,6 +4,7 @@
 [![PyPI Latest Release](https://img.shields.io/pypi/v/mortgage_tools.svg)](https://pypi.org/project/mortgage_tools/)
 ![License](https://img.shields.io/pypi/l/mortgage_tools)
 ![Python versions](https://img.shields.io/pypi/pyversions/mortgage_tools)
+[![Run in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lmnoel/mortgage-tools/blob/main/notebook/mortgage_tools_demo.ipynb)
 
 Mortgage cost/payoff calculators online are a dime a dozen, but they tend to assume you are making consistent extra
 payments each month, or a single one-time payment. I could not find a single one that was flexible and detailed enough
@@ -23,6 +24,17 @@ primitives for manipulation as needed.
  * [How will different initial principal amounts affect my total costs?](#how-will-different-initial-principal-amounts-affect-my-total-costs)
  * [If I want to pay off a loan by month X how much extra do I need to pay per month?](#if-I-want-to-pay-off-a-loan-by-month-x-how-much-extra-do-I-need-to-pay-per-month)
 
+## Usage
+
+### Run in Google Colab
+
+[![Run in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lmnoel/mortgage-tools/blob/main/notebook/mortgage_tools_demo.ipynb)
+
+### Run locally
+
+`pip install mortgage_tools`
+
+## Examples
 
 ### What will my total costs be over the lifetime of the loan?
 
