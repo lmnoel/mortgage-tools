@@ -68,8 +68,10 @@ def principal_curve(min_principal: int, max_principal: int, interest_rate: float
     for principal in range(min_principal, max_principal, PRINCIPAL_STEP_SIZE):
         loan = Loan(principal, term_in_months, interest_rate)
         values.append(loan.summarize())
-    return _df_from_loan_summaries(values, 'cumulative_principal_paid',
+    df =  _df_from_loan_summaries(values, 'cumulative_principal_paid',
                                    ['standard_monthly_payment', 'cumulative_interest_paid'])
+    return df.rename(columns={'cumulative_principal_paid': 'initial_principal'})
+
 
 
 def payoff_by_date(loan: Loan, desired_payoff_month: int) -> float:

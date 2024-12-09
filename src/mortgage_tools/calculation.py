@@ -42,8 +42,8 @@ class LoanSummary:
         self.interest_rate = interest_rate
         self.standard_monthly_payment = standard_monthly_payment
         self.payoff_period = amortization_table.index[-1]
-        self.cumulative_interest_paid = amortization_table.iloc[-1]['cumulative_interest_paid']
-        self.cumulative_principal_paid = amortization_table.iloc[-1]['cumulative_principal_paid']
+        self.cumulative_interest_paid = round(amortization_table.iloc[-1]['cumulative_interest_paid'], 2)
+        self.cumulative_principal_paid = round(amortization_table.iloc[-1]['cumulative_principal_paid'], 2)
         self.principal_ratio = self.cumulative_principal_paid / (
                 self.cumulative_principal_paid + self.cumulative_interest_paid)
 
@@ -161,7 +161,7 @@ class Loan:
         :return: The total number of months that it will take to pay off the loan,
         measured from the loan origination, taking into account additional payments.
         """
-        return self.amortization_table().index[-1]
+        return int(self.amortization_table().index[-1])
 
     def amortization_table(self) -> DataFrame:
         """
