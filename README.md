@@ -1,6 +1,9 @@
 # Mortgage Tools
 
 [![Build Status](https://github.com/lmnoel/mortgage-tools/actions/workflows/python-package.yml/badge.svg)](https://github.com/lmnoel/mortgage-tools/actions/workflows/python-package.yml)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/mortgage_tools.svg)](https://pypi.org/project/mortgage_tools/)
+![License](https://img.shields.io/pypi/l/mortgage_tools)
+![Python versions](https://img.shields.io/pypi/pyversions/mortgage_tools)
 
 Mortgage cost/payoff calculators online are a dime a dozen, but they tend to assume you are making consistent extra
 payments each month, or a single one-time payment. I could not find a single one that was flexible and detailed enough
