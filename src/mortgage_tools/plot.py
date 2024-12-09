@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 
-from src.mortgage_tools.calculation import LoanSummary
-from src.mortgage_tools.optimization import interest_rate_curve, principal_curve
+from mortgage_tools.calculation import LoanSummary
+from mortgage_tools.optimization import interest_rate_curve, principal_curve
 
 pd.set_option('display.float_format', '{:.2f}'.format)
 

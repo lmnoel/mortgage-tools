@@ -3,7 +3,7 @@ from typing import Generator, List
 
 from pandas import DataFrame
 
-from src.mortgage_tools.calculation import Loan, LoanSummary
+from mortgage_tools.calculation import Loan, LoanSummary
 
 PAYOFF_CURVE_STEP_SIZE_DOLLARS = 100
 INTEREST_RATE_STEP_SIZE = .001
