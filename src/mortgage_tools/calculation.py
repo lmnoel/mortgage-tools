@@ -25,7 +25,7 @@ class LoanSummaryDelta:
         self.cumulative_principal_delta = cumulative_principal_delta
 
     def __repr__(self):
-        y, m = divmod(self.payoff_period_delta, 12)
+        y, m = divmod(abs(self.payoff_period_delta), 12)
         cumulative_principle_and_interest_delta = self.cumulative_interest_delta + self.cumulative_principal_delta
         return f"""
             Payoff period: {abs(self.payoff_period_delta)} months {'more' if self.payoff_period_delta > 0 else 'less'} [{abs(int(y))} year(s), {abs(int(m))} month(s)]
